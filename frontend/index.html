@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🤖 AI DEBUGGING ASSISTANT - POWERED BY OLLAMA</title>
+
+    <!-- Roboto Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="app-header">
+        <h1>🤖 AI DEBUGGING ASSISTANT - POWERED BY OLLAMA</h1>
+
+        <div class="model-select">
+            <label>MODEL:</label>
+            <select id="model-select">
+                <option value="qwen2.5-coder:1.5b" selected>Qwen 2.5 Coder (1.5B)</option>
+                <option value="deepseek-coder:1.3b">DeepSeek Coder (1.3B)</option>
+                <option value="llama3.2:1b">LLaMA 3.2 (1B)</option>
+                <option value="qwen2.5:0.5b">Qwen 2.5 (0.5B)</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- CHAT -->
+    <div id="chat-container"></div>
+
+    <!-- INPUT -->
+    <div class="input-area">
+        <textarea id="user-input" placeholder="Describe your code issue or paste error logs..."></textarea>
+        <button id="send-btn">➤</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="chat.js"></script>
+
+</body>
+</html>
