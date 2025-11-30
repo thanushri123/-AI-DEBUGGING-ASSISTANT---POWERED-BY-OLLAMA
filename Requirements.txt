@@ -1,0 +1,58 @@
+Here are all the required installations needed before running the project.
+These include system requirements, Python packages, frontend dependencies, and Ollama setup.
+
+✅ 1. System Requirements:
+
+Must be installed on your machine:
+
+Requirement               Version	                          Purpose
+
+Python	                  3.10+           	             Runs backend API (FastAPI)
+pip	                  Latest	                     Installs dependencies
+Ollama	                  0.13.0+         	             Runs local LLMs
+
+✅ 2. Required Python Packages
+
+These go inside requirements.txt and must be installed via pip:
+
+     fastapi
+     uvicorn
+     httpx
+     pydantic
+
+Install them:
+
+     pip install -r requirements.txt
+
+✅ 3. Required Ollama Models
+
+You must install all the models used in the dropdown:
+
+     ollama pull qwen2.5-coder:1.5b
+     ollama pull deepseek-coder:1.3b
+     ollama pull llama3.2:1b
+     ollama pull qwen2.5:0.5b
+
+or install only what you plan to use.
+
+✅ 4. Required Services Running
+
+Before starting the backend:
+
+Start Ollama service using the below command in your terminal:
+     
+     ollama serve
+
+✅ 5. Frontend Requirements
+
+➡️ No Node.js, no npm, no framework required.
+
+Just open:
+
+     frontend/index.html
+
+in any browser.
+
+Your frontend dependencies are loaded via CDN: marked.js (markdown parser)
+
+So no installation is needed.
